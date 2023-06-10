@@ -4,7 +4,6 @@ import ee
 import datetime
 
 
-
 #pulls data from Google sheetscond
 def pull_sheet_data():
     sheet_url = "https://docs.google.com/spreadsheets/d/160hgu9P2nK3TSYUS694bKlwcg_bpNDWax1WJKLg-Ex8/edit#gid=0"
