@@ -184,9 +184,7 @@ def map_master():
     sheet_df = pull_sheet_data()
     sheet_ndvi_df = add_data(sheet_df, ndvi_img, elv_img)
 
-    #lanbd cover layer initiliziation and map initilization
-
-
+    #land cover layer initiliziation and map initilization
     full_map = make_map_w_markers(sheet_ndvi_df, ndvi_img, ndvi_img)
     return full_map
 
