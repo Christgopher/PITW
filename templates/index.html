@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Folium Map</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <div id="map-div">
+        <h1>PITW Map </h1>
+        <iframe id="iframe-map", src="/map"></iframe>
+    </div>
+
+    <div id="sum-div">
+        <h3>Summary Data</h3>
+        <iframe id="iframe-table", src="/table"></iframe>
+    </div>
+    <div id="but-div">
+        <button onclick="window.open('https://docs.google.com/spreadsheets/d/160hgu9P2nK3TSYUS694bKlwcg_bpNDWax1WJKLg-Ex8/edit?usp=sharing', '_blank')">
+            Add data to map
+        </button>
+        <button onclick="window.open('https://docs.google.com/document/d/150kyZ8Lcepu4rMu5spbR8GP0O9Ly2ksp5XTPgUY7E6c/edit?usp=sharing', '_blank')">
+            Documentation
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+  margin: 10;
+  padding: 10;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5;
+}
+
+#map-div {
+  height: 65%;
+  width: 100%;
+  margin: 5;
+  padding: 5;
+}
+
+#sum-div {
+  height: 25%;
+  width: 100%;
+  margin: 5;
+  padding: 5;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2;
+}
+
+#but-div {
+  height: 10%;
+  width: 50%;
+  margin: 5;
+  padding: 5;
+}
+
+#iframe-map {
+  min-height: 400px;
+  height: 100%;
+  min-width: 400px;
+  width: 100%;
+}
+
+#iframe-table {
+  min-height: 200px;
+  height: 100%;
+  min-width: 400px;
+  width: 100%;
+}

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5d108dd6da5274ab7a4f2a3e7982cef4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5d108dd6da5274ab7a4f2a3e7982cef4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5d108dd6da5274ab7a4f2a3e7982cef4 = L.map(
+                "map_5d108dd6da5274ab7a4f2a3e7982cef4",
+                {
+                    center: [45.5152, -122.6784],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f1c761d4fe629343c576c423095eda44 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var marker_8d4fa875ca2d2adf7d024daf441280af = L.marker(
+                [45.4232373, -122.5994222],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_663688bf7f939a24753c23285b50d141 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_8d4fa875ca2d2adf7d024daf441280af.setIcon(icon_663688bf7f939a24753c23285b50d141);
+        
+    
+        var popup_107baf18d33cf62c0e8966d102e2d842 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_10615e3499ecbcdc90c478fbbf2ec93b = $(`<div id="html_10615e3499ecbcdc90c478fbbf2ec93b" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Alder Creek </h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">80</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">15</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">35</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.4988169391253527</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">older forest patch ~ 100 years that was the kept after urbanization/ other land uses changed </td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">Things of interest to me is that it's dominated by Ivy but still seems healthy</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_107baf18d33cf62c0e8966d102e2d842.setContent(html_10615e3499ecbcdc90c478fbbf2ec93b);
+            
+        
+
+        marker_8d4fa875ca2d2adf7d024daf441280af.bindPopup(popup_107baf18d33cf62c0e8966d102e2d842)
+        ;
+
+        
+    
+    
+            var marker_a1d171827b0487b1c96dbf9aaccd22e0 = L.marker(
+                [45.1954866, -122.1938254],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_05a5eea9e60e3671bd22a263e62efa70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_a1d171827b0487b1c96dbf9aaccd22e0.setIcon(icon_05a5eea9e60e3671bd22a263e62efa70);
+        
+    
+        var popup_94a8177ad85cac91a731db8f14ff2926 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3208d55d43c1de108e7106749b81299a = $(`<div id="html_3208d55d43c1de108e7106749b81299a" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Riverside Fire</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">105</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">22</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">329</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.30788690939952656</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">Forest was logged until 1945 when the Northwest Forest Plan was enacted</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">Severely burned during the 2020 wildfires, no trees in the plots survived</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_94a8177ad85cac91a731db8f14ff2926.setContent(html_3208d55d43c1de108e7106749b81299a);
+            
+        
+
+        marker_a1d171827b0487b1c96dbf9aaccd22e0.bindPopup(popup_94a8177ad85cac91a731db8f14ff2926)
+        ;
+
+        
+    
+    
+            var marker_240cd2013778a183e54bfb44de021047 = L.marker(
+                [45.39846, -122.12478],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_d535b03b01e7e564d1bec113c8343ca3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_240cd2013778a183e54bfb44de021047.setIcon(icon_d535b03b01e7e564d1bec113c8343ca3);
+        
+    
+        var popup_f7bb31aea8e7a4fd37ec7705ffa0c7ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7f923f8c13fa4c55a82241caec000526 = $(`<div id="html_7f923f8c13fa4c55a82241caec000526" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Marmot Rec Area Plot A</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">125</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">20</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">253</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.01219128892726682</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">General Marmot history: both of these sites are located down the road from a dam that was removed in 2008-ish</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">primarily a red cedar older growth forest, understory mainly ferns</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_f7bb31aea8e7a4fd37ec7705ffa0c7ab.setContent(html_7f923f8c13fa4c55a82241caec000526);
+            
+        
+
+        marker_240cd2013778a183e54bfb44de021047.bindPopup(popup_f7bb31aea8e7a4fd37ec7705ffa0c7ab)
+        ;
+
+        
+    
+    
+            var marker_42b460c47ef92d0cb484fca388d505e0 = L.marker(
+                [45.39753, -122.12359],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_de1caf81ef1e21cdec1dd0b9d77a1ba6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_42b460c47ef92d0cb484fca388d505e0.setIcon(icon_de1caf81ef1e21cdec1dd0b9d77a1ba6);
+        
+    
+        var popup_9572b5c05deeb8c606622d2a24988dcd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d79d4f8083f184238d636c3419171c3 = $(`<div id="html_4d79d4f8083f184238d636c3419171c3" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Marmot Rec Area Plot B</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">20</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">274</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">248</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.016731469350265624</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">nan</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">red alder forest with invasive blackberry understory, different forest composition to Plot A so I wantes to compare the differences</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_9572b5c05deeb8c606622d2a24988dcd.setContent(html_4d79d4f8083f184238d636c3419171c3);
+            
+        
+
+        marker_42b460c47ef92d0cb484fca388d505e0.bindPopup(popup_9572b5c05deeb8c606622d2a24988dcd)
+        ;
+
+        
+    
+    
+            var marker_1b60fcae8c4c12403cd5680fe3f18ec8 = L.marker(
+                [45.451248, -122.869666],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_d68be5d7ee3bb3fb6095bf42fcc9fcef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_1b60fcae8c4c12403cd5680fe3f18ec8.setIcon(icon_d68be5d7ee3bb3fb6095bf42fcc9fcef);
+        
+    
+        var popup_89277d51b0adfe85a57463bee52a63a7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2cfa33d350ff03f5eb0958d1a4690ecd = $(`<div id="html_2cfa33d350ff03f5eb0958d1a4690ecd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Cooper Mountain Nature Park - Little Prairie Loop Sample A</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">130</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">101.74</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">228</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.5070316666224013</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">nan</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">Mixure of both - Ponderosa Pine and grassland</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_89277d51b0adfe85a57463bee52a63a7.setContent(html_2cfa33d350ff03f5eb0958d1a4690ecd);
+            
+        
+
+        marker_1b60fcae8c4c12403cd5680fe3f18ec8.bindPopup(popup_89277d51b0adfe85a57463bee52a63a7)
+        ;
+
+        
+    
+    
+            var marker_c524ea737dcc1865a8ea40b2a85e08e2 = L.marker(
+                [45.450062, -122.868387],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_1d5cd6f250eff54848df12b6501885d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c524ea737dcc1865a8ea40b2a85e08e2.setIcon(icon_1d5cd6f250eff54848df12b6501885d1);
+        
+    
+        var popup_be32d06abde4bc78ee004fb08dfaa196 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5139ad9d06f6842c9b0477130e41651e = $(`<div id="html_5139ad9d06f6842c9b0477130e41651e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Cooper Mountain Nature Park - Little Prairie Loop Sample B</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">200</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">119.77</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">217</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.533271547070617</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">nan</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">Forested Area - Mainly Douglas Fir, with a few Madrone</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_be32d06abde4bc78ee004fb08dfaa196.setContent(html_5139ad9d06f6842c9b0477130e41651e);
+            
+        
+
+        marker_c524ea737dcc1865a8ea40b2a85e08e2.bindPopup(popup_be32d06abde4bc78ee004fb08dfaa196)
+        ;
+
+        
+    
+    
+            var marker_fb84b7d32ea6fd020c4be359bf5a9b29 = L.marker(
+                [45.449296, -122.867924],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_15fbdaccd578a28cd39815ec5d6edfb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_fb84b7d32ea6fd020c4be359bf5a9b29.setIcon(icon_15fbdaccd578a28cd39815ec5d6edfb4);
+        
+    
+        var popup_093f6097b9f1185d39d8378bac49b62b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc189b67a4b616fe5701a54e73172e4f = $(`<div id="html_dc189b67a4b616fe5701a54e73172e4f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Cooper Mountain Nature Park - Little Prairie Loop Sample C</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">80</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">34.09</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">217</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.5040897882937603</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">nan</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">Oak Savanna/ Prairie - Mainly Oregon white oak, few Douglas Fir</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_093f6097b9f1185d39d8378bac49b62b.setContent(html_dc189b67a4b616fe5701a54e73172e4f);
+            
+        
+
+        marker_fb84b7d32ea6fd020c4be359bf5a9b29.bindPopup(popup_093f6097b9f1185d39d8378bac49b62b)
+        ;
+
+        
+    
+    
+            var marker_befea3157eaa92ca7baa96193bca410b = L.marker(
+                [45.492035, -122.510131],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_0370ed31c3e10a640fa222e920abc679 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_befea3157eaa92ca7baa96193bca410b.setIcon(icon_0370ed31c3e10a640fa222e920abc679);
+        
+    
+        var popup_0b27793902a0cec308d5e9143027bc1d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e85f7c174a26c77557c5897895d733b2 = $(`<div id="html_e85f7c174a26c77557c5897895d733b2" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Powell Butte (North site)</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">420</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">44.5</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">118</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.46901244119694896</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">Late-seral second growth. First logged late 1800s, relativel minimal management thereafter. Purchased by Portland Metro in 1925</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">Tallest trees on the east side of PDX</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_0b27793902a0cec308d5e9143027bc1d.setContent(html_e85f7c174a26c77557c5897895d733b2);
+            
+        
+
+        marker_befea3157eaa92ca7baa96193bca410b.bindPopup(popup_0b27793902a0cec308d5e9143027bc1d)
+        ;
+
+        
+    
+    
+            var marker_50715b8a50238bbb6bd11aa11c331303 = L.marker(
+                [45.485817, -122.513639],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_3208698fc43e20138f04260fe19e2604 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_50715b8a50238bbb6bd11aa11c331303.setIcon(icon_3208698fc43e20138f04260fe19e2604);
+        
+    
+        var popup_8d2ad85dd0fa12bfd9840a1d8420404b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_996cd02fe99d48abbeaaed87de030d37 = $(`<div id="html_996cd02fe99d48abbeaaed87de030d37" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Powell Butte (South site)</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">160</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">38.3</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">147</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.6446095575272872</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">Late-seral second growth. First logged late 1800s, relativel minimal management thereafter. Purchased by Portland Metro in 1925</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">nan</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_8d2ad85dd0fa12bfd9840a1d8420404b.setContent(html_996cd02fe99d48abbeaaed87de030d37);
+            
+        
+
+        marker_50715b8a50238bbb6bd11aa11c331303.bindPopup(popup_8d2ad85dd0fa12bfd9840a1d8420404b)
+        ;
+
+        
+    
+    
+            var marker_a3d8f1757773294bfdd38da0eaa72af7 = L.marker(
+                [45.49, -122.69],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_9dcda0858769ed8899c5d6042e18ea55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_a3d8f1757773294bfdd38da0eaa72af7.setIcon(icon_9dcda0858769ed8899c5d6042e18ea55);
+        
+    
+        var popup_480972983112f9fb85b73294657c0391 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8cbf6d7967d4c46506cf2c27f8a12058 = $(`<div id="html_8cbf6d7967d4c46506cf2c27f8a12058" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Marquam Nature Park (SW)</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">105</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">9.9</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">219</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.5171058557256877</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">nan</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">nan</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_480972983112f9fb85b73294657c0391.setContent(html_8cbf6d7967d4c46506cf2c27f8a12058);
+            
+        
+
+        marker_a3d8f1757773294bfdd38da0eaa72af7.bindPopup(popup_480972983112f9fb85b73294657c0391)
+        ;
+
+        
+    
+    
+            var marker_ea5ba4f2c35ee19e050b3ee2de5b5a61 = L.marker(
+                [45.600166, -122.399282],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_9b4a95396de3f7038ffd33f2520b1953 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_ea5ba4f2c35ee19e050b3ee2de5b5a61.setIcon(icon_9b4a95396de3f7038ffd33f2520b1953);
+        
+    
+        var popup_187af0cc089d5e35733d71d413cbfb44 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_25ca735484153014cf99ce79521aefa3 = $(`<div id="html_25ca735484153014cf99ce79521aefa3" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Lacamas lake Park (Camas Lilly Fields)</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">95</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">65</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">100</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.45609771484400613</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">nan</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">Camas lilly is abundant, a traditional harvest for the first peoples </td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_187af0cc089d5e35733d71d413cbfb44.setContent(html_25ca735484153014cf99ce79521aefa3);
+            
+        
+
+        marker_ea5ba4f2c35ee19e050b3ee2de5b5a61.bindPopup(popup_187af0cc089d5e35733d71d413cbfb44)
+        ;
+
+        
+    
+    
+            var marker_8ebeea49b5d96c235137d97dfe96ecd6 = L.marker(
+                [45.4982, -122.8396],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_b5df183c8ec7e4addb10080664514ed9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_8ebeea49b5d96c235137d97dfe96ecd6.setIcon(icon_b5df183c8ec7e4addb10080664514ed9);
+        
+    
+        var popup_7d7b1c7f4718990cb70f77f132c5e9c7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_811a68301cb937cd37f7e511aa3ce556 = $(`<div id="html_811a68301cb937cd37f7e511aa3ce556" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Tualatin Hills Nature Park</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">100</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">10</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">67</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.3694931856153808</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">Late Maturation</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">A forest full of Douglas-fir and Western redcedar, mixed with wetland and skunk cabbage</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_7d7b1c7f4718990cb70f77f132c5e9c7.setContent(html_811a68301cb937cd37f7e511aa3ce556);
+            
+        
+
+        marker_8ebeea49b5d96c235137d97dfe96ecd6.bindPopup(popup_7d7b1c7f4718990cb70f77f132c5e9c7)
+        ;
+
+        
+    
+    
+            var marker_33bda8986d63c2e99f818e0ce776c974 = L.marker(
+                [45.41874462, -122.4997285],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_413d51a4ce5ea35cc39669e169b3b9df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_33bda8986d63c2e99f818e0ce776c974.setIcon(icon_413d51a4ce5ea35cc39669e169b3b9df);
+        
+    
+        var popup_c9e244e336dfd7049bc9eab7cc18a708 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fc0ffadea3d3c5188a3185ab297cc74f = $(`<div id="html_fc0ffadea3d3c5188a3185ab297cc74f" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Hidden Falls Nature Park</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">110</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">11</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">90</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.5496805269610221</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">nan</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">Eagle Creek runs through the center of the park, with steep slopes on both sides of stream</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_c9e244e336dfd7049bc9eab7cc18a708.setContent(html_fc0ffadea3d3c5188a3185ab297cc74f);
+            
+        
+
+        marker_33bda8986d63c2e99f818e0ce776c974.bindPopup(popup_c9e244e336dfd7049bc9eab7cc18a708)
+        ;
+
+        
+    
+    
+            var marker_2315524d8889a954d2dfb4d2513c2ed3 = L.marker(
+                [45.05085903, -122.1202886],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_598382ba550dd3377f865ff8519a87da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_2315524d8889a954d2dfb4d2513c2ed3.setIcon(icon_598382ba550dd3377f865ff8519a87da);
+        
+    
+        var popup_283a0b0a1302d58d98d5af16d4cd33d3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6793f826e1e9803df488f65f8285626c = $(`<div id="html_6793f826e1e9803df488f65f8285626c" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Fish Creek Trailhead (Clackamas River trail)</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">180</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">113.73</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">1009</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.45177633490034597</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">natural scenic area of mixed conifer forest that experienced stand replacing fire in 2020</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">so severely burned that the parking lot looks apocolypitic; few trees remain/acres of burned snags. TONS of herbacious growth. </td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_283a0b0a1302d58d98d5af16d4cd33d3.setContent(html_6793f826e1e9803df488f65f8285626c);
+            
+        
+
+        marker_2315524d8889a954d2dfb4d2513c2ed3.bindPopup(popup_283a0b0a1302d58d98d5af16d4cd33d3)
+        ;
+
+        
+    
+    
+            var marker_b64dd8e0f1a5de0b28b990daab83dba7 = L.marker(
+                [45.43225, -122.66865],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_7e9b35c36b63184006a27c24f6513fb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_b64dd8e0f1a5de0b28b990daab83dba7.setIcon(icon_7e9b35c36b63184006a27c24f6513fb7);
+        
+    
+        var popup_fad7e0b6e261187adaf71078690105e9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_df7bed2297437a0a980994f08f2013e4 = $(`<div id="html_df7bed2297437a0a980994f08f2013e4" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Iron Mountain Trailhead</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">200</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">20</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">89</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.5560535888682592</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">section of Tryon had been historically used for charcoal production</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">measures against emerald ash borers underway at the head of the trail</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_fad7e0b6e261187adaf71078690105e9.setContent(html_df7bed2297437a0a980994f08f2013e4);
+            
+        
+
+        marker_b64dd8e0f1a5de0b28b990daab83dba7.bindPopup(popup_fad7e0b6e261187adaf71078690105e9)
+        ;
+
+        
+    
+    
+            var marker_7f9f22e9b405dd7e0d11488a14960232 = L.marker(
+                [45.431, -122.67291],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_0a458a6d98b7a162d11b5bf2d7023dd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_7f9f22e9b405dd7e0d11488a14960232.setIcon(icon_0a458a6d98b7a162d11b5bf2d7023dd4);
+        
+    
+        var popup_585b539172a1dbc8cc4c4e6343421689 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f782f6e88493132792c3d0c6c2d7ba02 = $(`<div id="html_f782f6e88493132792c3d0c6c2d7ba02" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">Iron Mountain Bridge</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">200</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">20</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">50</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.5481727390367301</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">nan</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">sandier/muddier creek bank than up creek where it is a bit rockier. better for documenting animal tracks. bank is frequented by deer, coyotes, others. couldn't find any bats nesting under the bridge, wouldn't be suprised to find a roost there though. area seems to be a hot spot for animal activity.</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_585b539172a1dbc8cc4c4e6343421689.setContent(html_f782f6e88493132792c3d0c6c2d7ba02);
+            
+        
+
+        marker_7f9f22e9b405dd7e0d11488a14960232.bindPopup(popup_585b539172a1dbc8cc4c4e6343421689)
+        ;
+
+        
+    
+    
+            var marker_32c98fb51f9c44fa803917555eb27eeb = L.marker(
+                [45.4305, -122.1202],
+                {}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var icon_67e04d7c1d312322c82bc4cf86fcaf07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_32c98fb51f9c44fa803917555eb27eeb.setIcon(icon_67e04d7c1d312322c82bc4cf86fcaf07);
+        
+    
+        var popup_61bdfd7cf3e46b15bc57fea35b09d822 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a08abd9a63fbaedbc990e2c6ef67b5d9 = $(`<div id="html_a08abd9a63fbaedbc990e2c6ef67b5d9" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html> <html> <head> <h4 style="margin-bottom:10"; width="200px">EXAMPLE</h4> </head>     <table style="height: 126px; width: 350px;"> <tbody> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Basal Area (ft^2)</span></td> <td style="width: 150px;background-color: #f2f0d3;">140</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Density (trees/acre)</span></td> <td style="width: 150px;background-color: #f2f0d3;">113.73</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Elevation (m)</span></td> <td style="width: 150px;background-color: #f2f0d3;">612</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">ndvi</span></td> <td style="width: 150px;background-color: #f2f0d3;">0.029412996558042276</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Brief History</span></td> <td style="width: 150px;background-color: #f2f0d3;">test</td> </tr> <tr> <td style="background-color: #19a7bd;"><span style="color: #ffffff;">Interesting Tidbit</span></td> <td style="width: 150px;background-color: #f2f0d3;">test</td> </tr> </tbody> </table> </html> </div>`)[0];
+                popup_61bdfd7cf3e46b15bc57fea35b09d822.setContent(html_a08abd9a63fbaedbc990e2c6ef67b5d9);
+            
+        
+
+        marker_32c98fb51f9c44fa803917555eb27eeb.bindPopup(popup_61bdfd7cf3e46b15bc57fea35b09d822)
+        ;
+
+        
+    
+    
+            var tile_layer_f2749588561c5a374dda560cfd90f626 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/82302bf76471cbc4d71eafdc4e3c615a-32fde1d6ec9a773c60b1206905959bc8/tiles/{z}/{x}/{y}",
+                {"attribution": "Map Data \u0026copy; \u003ca href=\"https://earthengine.google.com/\"\u003eGoogle Earth Engine\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var tile_layer_3bc8217fe972f61b83e7eeb53aeddd75 = L.tileLayer(
+                "https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/835f941c2ad14933e8131fb3860a04da-9c512489ec95e12a6d562e6879b7459d/tiles/{z}/{x}/{y}",
+                {"attribution": "Map Data \u0026copy; \u003ca href=\"https://earthengine.google.com/\"\u003eGoogle Earth Engine\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+        
+    
+            var layer_control_bc437821c462b18dc05c5aa56a8f8c9e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f1c761d4fe629343c576c423095eda44,
+                },
+                overlays :  {
+                    "Elevation" : tile_layer_f2749588561c5a374dda560cfd90f626,
+                    "NDVI" : tile_layer_3bc8217fe972f61b83e7eeb53aeddd75,
+                },
+            };
+            L.control.layers(
+                layer_control_bc437821c462b18dc05c5aa56a8f8c9e.base_layers,
+                layer_control_bc437821c462b18dc05c5aa56a8f8c9e.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_5d108dd6da5274ab7a4f2a3e7982cef4);
+            tile_layer_f2749588561c5a374dda560cfd90f626.remove();
+            tile_layer_3bc8217fe972f61b83e7eeb53aeddd75.remove();
+        
+</script>
+</html>
