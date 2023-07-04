@@ -21,6 +21,8 @@ FIX:
 
 --Data cleaning measures. Currently, if someone puts in "bad data" (i.e. coordinates with a comma left in or something), there are no meaures in place to "clean" that data and make it usable.
 
+--Some of the images being pulled for use with the NDVI calculation are extremely cloudy and not suitable for such work. Unsure if this is an issue with image avalaibiltiy within the given time frame (last three months), or an issue with the code itself.
+
 
 FINESSE
 
