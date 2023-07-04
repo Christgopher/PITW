@@ -11,7 +11,7 @@ THINGS TO ADD, FIX, OR FINESSE
 
 ADD:
 
--At the moment, the geospatial analysis does not integrate the student collected data in a meaningful way: it just takes the inputted coordinates and uses satellite images to approximate the ndvi at the sites. Putting together some sort of model using a combination of satellite images and student-collected "ground data" would be cool. For example, creating a statistical model that uses measurments of leaf area taken at the sites to validate the NDVI, and vice-versa, would a cool thing to know how to make.
+-At the moment, the geospatial analysis does not integrate the student collected data in a meaningful way, it just takes the inputted coordinates and uses satellite images to approximate the ndvi at the sites. Putting together some sort of model using a combination of satellite images and student-collected "ground data" would be cool. For example, creating a statistical model that uses measurements of leaf area taken at the sites to validate the NDVI, and vice-versa.
 
 -More interesting analysis and visualization of the summary data
 
