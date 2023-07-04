@@ -1,6 +1,6 @@
 # PITW Mapping Project
 
-Howdy! This is a mapping application created to supplement the Place in the Woods Forest Ethnography assignment for ESM-444 Forest Ecology at Portland State University. Students input data collected during the course of the project to a [(Google Sheet)]( https://docs.google.com/spreadsheets/d/1jySQbxCzbiSPNtTG1xPxiIWVtjMeawwrdV_XUwHfWEE/edit?usp=sharing), the app performs some rudimentary geospatial analysis on the sites using Google Earth Engine, and the resulting data is mapped, summarized, and displayed [(here)](http://christgopher.pythonanywhere.com/)
+Howdy! This is a mapping application created to supplement the Place in the Woods Forest Ethnography assignment for ESM-444 Forest Ecology at Portland State University. Students input data collected during the course of the project to a [Google Sheet]( https://docs.google.com/spreadsheets/d/1jySQbxCzbiSPNtTG1xPxiIWVtjMeawwrdV_XUwHfWEE/edit?usp=sharing), the app performs some rudimentary geospatial analysis on the sites using Google Earth Engine, and the resulting data is mapped, summarized, and displayed [here](http://christgopher.pythonanywhere.com/)
 
 I had only minimal previous experiance with programming and GIS prior to the outset of this project, no experiance with Python or any of the other technologies used, and highly limited time. Therefore this project has a number of unfinished edges and is liable to break at any moment. The point was not necessarily to make something that "works", it was to learn how these things *work*.
 
